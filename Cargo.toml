@@ -1,0 +1,16 @@
+[package]
+name = "dynamic-pooling"
+version = "1.0.0"
+description = "A lock-free, thread-safe object pool."
+license = "MIT"
+authors = ["Purpzie"]
+repository = "https://github.com/purpzie/dynamic-pooling"
+include = ["src", "README.md", "LICENSE"]
+edition = "2021"
+
+[features]
+default = ["std"]
+std = ["crossbeam-queue/std"]
+
+[dependencies]
+crossbeam-queue = { version = "0.3.5", features = ["alloc"], default-features = false }
