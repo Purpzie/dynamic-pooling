@@ -14,7 +14,7 @@ use std::{
 /// Trait for types that can be reset to their [`Default`] while keeping allocated memory.
 ///
 /// Types should not implement this trait if memory is deallocated when reset, such as
-/// [`BTreeMap`](std::collections::BTreeMap).
+/// [`BTreeMap`](alloc::collections::BTreeMap).
 ///
 /// ```
 /// # use dynamic_pooling::Reset;
