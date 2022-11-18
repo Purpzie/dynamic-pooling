@@ -17,7 +17,7 @@ jobs:
         with:
           components: clippy, rustfmt
       - name: Fetch cache
-        uses: Swatinem/rust-cache@v1
+        uses: Swatinem/rust-cache@v2
       - name: Clippy
         run: |
           cargo clippy --all-targets --no-default-features -- -D warnings
